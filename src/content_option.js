@@ -1,3 +1,5 @@
+import profile from './assets/images/profile.jpeg'
+
 const logotext = "Matheus";
 
 const meta = {
@@ -10,7 +12,7 @@ const introdata = {
     animated: {
         first: "I develop mobile apps",
     },
-    your_img_url: "https://scontent.fcgh51-1.fna.fbcdn.net/v/t39.30808-6/315767519_3393292084276840_1891412086178864305_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF1DOe-CXPpySWO_iO70gQEN4D9AULCwvc3gP0BQsLC9_7QAHM4Y6K7yQQ6KDc_0obHORIhtNDawwI-eWf3jXye&_nc_ohc=aSIjECc2nLsAX9eECy0&_nc_ht=scontent.fcgh51-1.fna&oh=00_AfA3GR0DlpTG8WD1hs1Rv0rF9bCZJvyxNVqDJXJeDcAKQQ&oe=65507109",
+    your_img_url: profile,
 };
 
 const dataabout = {
