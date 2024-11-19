@@ -1,0 +1,128 @@
+/* Variáveis de cores para ambos os temas */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #ffffff; /* Fundo claro */
+    --text-color: #ffffff; /* Texto claro */
+    --card-bg: #f9f9f9; /* Fundo do cartão no modo claro */
+    --button-bg: #eeeeee; /* Fundo dos botões no modo claro */
+    --button-hover-bg: #6200ea; /* Fundo do botão ao passar mouse */
+    --button-hover-color: #ffffff; /* Cor do texto ao passar mouse */
+  }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212; /* Fundo escuro */
+    --text-color: #ffffff; /* Texto claro */
+    --card-bg: #333333; /* Fundo do cartão no modo escuro */
+    --button-bg: #333333; /* Fundo dos botões no modo escuro */
+    --button-hover-bg: #bb86fc; /* Fundo do botão ao passar mouse */
+    --button-hover-color: #000000; /* Cor do texto ao passar mouse */
+  }
+}
+
+/* Reset básico */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Contêiner principal */
+.projects-container {
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem; /* Adiciona margem no topo para descer a seção */
+}
+
+/* Título principal */
+.projects-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  margin-top: 2rem; /* Aumenta o espaço no topo do título */
+}
+
+/* Grid de projetos */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+  gap: 2rem; /* Espaço entre os cartões */
+  justify-content: center;
+  margin-top: 2rem; /* Adiciona espaço entre o título e os projetos */
+}
+
+/* Cartões individuais */
+.project-card {
+  background-color: var(--card-bg); /* Aplica a cor de fundo dependendo do modo */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Título do projeto */
+.project-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+/* Descrição e tecnologias */
+.project-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* Links de ações */
+.project-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite quebra de linha para botões em telas menores */
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: var(--button-hover-bg);
+  color: var(--button-hover-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%; /* Cartões ocupam toda a largura da tela */
+  }
+
+  .project-links {
+    flex-direction: column; /* Botões ficam empilhados */
+  }
+
+  .project-links a {
+    width: 100%; /* Botões ocupam toda a largura do cartão */
+    text-align: center;
+  }
+}
