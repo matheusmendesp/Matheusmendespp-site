@@ -1,20 +1,30 @@
 import React from 'react';
-import './style.css'; // Estilos separados em um arquivo CSS
+import './style.css'; 
 
-// Dados dos projetos
 const projects = [
   {
-    title: "Weather App",
-    description: "Aplicativo de clima em React Native com OpenWeatherMap API.",
-    technologies: "React Native, Expo, OpenWeatherMap",
-    github: "https://github.com/seurepositorio/weather-app",
-    demo: "https://seusite/weather-app",
+    title: "The Avengers Initiative",
+    description: "Aplicativo que mostra os vingadores.",
+    technologies: "Swift",
+    github: "https://github.com/matheusmendesp/TheAvengersInitiative",
   },
   {
-    title: "Finance Tracker",
-    description: "Aplicativo para gestão financeira e registro de gastos.",
-    technologies: "React Native, Firebase",
-    github: "https://github.com/seurepositorio/finance-tracker",
+    title: "Pokedex app",
+    description: "Aplicativo que mostra os pokemons existentes.",
+    technologies: "Swift, SwiftUI",
+    github: "https://github.com/matheusmendesp/PokedexApp",
+  },
+  {
+    title: "The Movie",
+    description: "Aplicativo que pega os filmes atraves da api do IMDB",
+    technologies: "Swift",
+    github: "https://github.com/matheusmendesp/MoviesApp",
+  },
+  {
+    title: "Chat app",
+    description: "Aplicativo de chat para conectar pessoas que querem conversar.",
+    technologies: "React-native, Firebase",
+    github: "https://github.com/matheusmendesp/ChatApp",
   },
 ];
 
