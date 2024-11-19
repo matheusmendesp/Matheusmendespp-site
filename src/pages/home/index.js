@@ -36,14 +36,14 @@ export const Home = () => {
                   />
                 </h1>
                 <div className="intro_btn-action pb-5">
-                  <a href="https://github.com/matheusmendesp?tab=repositories" className="text_2" target="_blank" rel="noreferrer">
+                  <Link to='/project'>
                   <div id="button_p" className="ac_btn btn ">
                       My Portfolio
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
                     </div>
-                  </a>
+                  </Link>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
                       Contact Me
