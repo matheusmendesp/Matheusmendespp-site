@@ -17,9 +17,24 @@ const introdata = {
     your_img_url: profile,
 };
 
+const calculateAge = (birthDate) => {
+    const today = new Date();
+    const birth = new Date(birthDate);
+    let age = today.getFullYear() - birth.getFullYear();
+
+    const monthDifference = today.getMonth() - birth.getMonth();
+    const dayDifference = today.getDate() - birth.getDate();
+
+    if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) {
+        age--;
+    }
+
+    return age;
+};
+
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "I'm Matheus Mendes, 24 years old, and I'm a mobile app developer with two years of experience in iOS development. I also have skills in cross-platform technologies like React Native and Flutter, allowing me to create apps that work across different operating systems. I'm committed to staying updated with the latest trends in mobile app development, and I believe in the transformative power of technology. Outside of work, I stay active and work on personal coding projects to keep learning and evolving. I'm excited to take on new challenges and contribute to innovative projects in the future.",
+    title: "A little about me",
+    aboutme: `I'm Matheus Mendes, ${calculateAge("2000-08-09")} years old, and I'm a mobile app developer with two years of experience in iOS development. I also have skills in cross-platform technologies like React Native and Flutter, allowing me to create apps that work across different operating systems. I'm committed to staying updated with the latest trends in mobile app development, and I believe in the transformative power of technology. Outside of work, I stay active and work on personal coding projects to keep learning and evolving. I'm excited to take on new challenges and contribute to innovative projects in the future.`,
 };
 
 const worktimeline = [
