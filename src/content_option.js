@@ -11,13 +11,15 @@ const introdata = {
     title: "I’m Matheus Mendes",
     animated: {
         first: "I develop mobile apps",
+        second: "I create web applications",
+        third: "I love coding ❤️",
     },
     your_img_url: profile,
 };
 
 const dataabout = {
     title: "abit about my self",
-    aboutme: "I'm Matheus Mendes, 23 years old, and I'm a mobile app developer with two years of experience in iOS development. I also have skills in cross-platform technologies like React Native and Flutter, allowing me to create apps that work across different operating systems. I'm committed to staying updated with the latest trends in mobile app development, and I believe in the transformative power of technology. Outside of work, I stay active and work on personal coding projects to keep learning and evolving. I'm excited to take on new challenges and contribute to innovative projects in the future.",
+    aboutme: "I'm Matheus Mendes, 24 years old, and I'm a mobile app developer with two years of experience in iOS development. I also have skills in cross-platform technologies like React Native and Flutter, allowing me to create apps that work across different operating systems. I'm committed to staying updated with the latest trends in mobile app development, and I believe in the transformative power of technology. Outside of work, I stay active and work on personal coding projects to keep learning and evolving. I'm excited to take on new challenges and contribute to innovative projects in the future.",
 };
 
 const worktimeline = [
